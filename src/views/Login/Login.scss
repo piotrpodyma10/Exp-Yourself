@@ -1,0 +1,119 @@
+body {
+  margin: 0;
+}
+
+.login {
+  background-color: black;
+  height: 100vh;
+  color: white;
+  background-image: url('../../assets/imgs/mortal31.jpg');
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  .login-panel {
+    width: 300px;
+    background-color: rgba(0,0,0, 0.7);
+    // background-color: white;
+    height: 300px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: absolute;
+    left: 150px;
+
+    .login-panel-container {
+      display: flex;
+      flex-direction: column;
+      width: 200px;
+      height: 200px;
+      align-items:center;
+      justify-content: space-around;
+
+      .icon-disabled {
+        color: #00fff600;
+        padding: 18px;
+      }
+      .icon-forward {
+        color: #00fff6;
+      }
+
+      .text-field {
+        color: white;
+
+        label {
+          // color: white;
+          // #c3e6ed
+          color: #00fff6;
+        }
+
+        input {
+          color: #ff9c00;
+        }
+
+        .MuiFilledInput-root {
+          // background-color: rgba();
+        }
+
+        .MuiFilledInput-underline {
+          &::before {
+            border-bottom: 1px solid #00fff6;
+          }
+
+
+          &::after {
+            border-bottom: 2px solid #ff9c00;
+
+          }
+        }
+      }
+    }
+  }
+
+  .eyes {
+    display: flex;
+    justify-content: space-around;
+    width: 367px;
+    margin-top: -270px;
+    .left-eye, .right-eye {
+      height: 27PX;
+      width: 60PX;
+      border-radius: 50%;;
+      background-color: black;
+    };
+  }
+
+  .no-eyes {
+    // display: none;
+    transition: all 2s;
+    animation-name: animation;
+    animation-duration: 4s;
+
+  }
+}
+
+
+@keyframes animation {
+  0% {
+    opacity: 1;
+  }
+
+  50% {
+    opacity: 0;
+  }
+
+  100% {
+    opacity: 1;
+  }
+}
+
+.test {
+    background-image: url('../../assets/imgs/mortal13.jpg');
+    transition: all 2s;
+    animation-name: animation;
+    animation-duration: 3s;
+    animation-delay: 1s;
+}
