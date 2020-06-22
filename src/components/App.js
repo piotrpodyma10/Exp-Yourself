@@ -14,10 +14,10 @@ function App() {
   return (
     <Router>
       <Switch>
-        <Route path="/">
+        <Route exact path="/">
           <Login />
         </Route>
-        <Route path="/my-profile">
+        <Route exact path="/my-profile">
           <MyProfile />
         </Route>
         {/* <Route path="*">
