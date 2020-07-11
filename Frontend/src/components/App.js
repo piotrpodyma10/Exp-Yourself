@@ -9,6 +9,7 @@ import {
 } from "react-router-dom";
 import Login from '../views/Login/Login';
 import MyProfile from '../views/MyProfile/MyProfile';
+import BestPrice from '../views/BestPrice/BestPrice';
 
 function App() {
   return (
@@ -19,6 +20,9 @@ function App() {
         </Route>
         <Route exact path="/my-profile">
           <MyProfile />
+        </Route>
+        <Route exact path="/best-price">
+          <BestPrice />
         </Route>
         {/* <Route path="*">
           <div>

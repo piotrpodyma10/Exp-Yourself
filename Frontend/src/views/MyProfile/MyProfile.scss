@@ -17,4 +17,18 @@
       color: white;
       font-size: 24px;
     }
+
+    .to-do-container {
+      position: absolute;
+      left: 50px;
+      top: 50px;
+      font-size: 26px;
+      font-weight: bold;
+
+      .task {
+        font-size: 18px;
+        color: lawngreen;
+        margin: 5px 0;
+      }
+    }
 }
